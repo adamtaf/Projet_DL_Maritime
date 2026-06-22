@@ -29,6 +29,10 @@ class DataStewardAgent(BaseAgent):
         for col in cat_cols:
             if col in df.columns:
                 df[col] = df[col].astype("category").cat.codes
+        print("Ordre des colonnes pour LIME :")
+        feature_names = df.drop(columns=["Detention"]).columns.tolist()
+        for i, name in enumerate(feature_names):
+            print(f"Feature_{i} : {name}")
         X = df.drop(columns=["Detention"]).values.astype(np.float32)
         y = df["Detention"].values.astype(np.int64)
         n = len(X)

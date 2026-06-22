@@ -1,0 +1,1 @@
+{"Configuration_Standard": {"conv1_filters": 6, "conv2_filters": 16, "accuracy": 0.9125}, "Configuration_Large": {"conv1_filters": 12, "conv2_filters": 32, "accuracy": 0.9296875}}

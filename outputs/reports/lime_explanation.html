@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCT34VTMZEV9B60X"></div>
+        <div class="lime top_div" id="top_divMN9ED5N2NBW5CFA"></div>
         
         <script>
-        var top_div = d3.select('#top_divCT34VTMZEV9B60X').classed('lime top_div', true);
+        var top_div = d3.select('#top_divMN9ED5N2NBW5CFA').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.9990931749343872, 0.0009068003273569047]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.3777589797973633, 0.6222410202026367]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Feature_2 <= -0.50", -0.14710401751154792], ["Feature_3 <= -0.67", -0.021074091289873906], ["0.28 < Feature_1 <= 0.81", -0.0065337296746939034], ["-0.69 < Feature_0 <= 0.08", -0.0020045951346561387]], 1, exp_div);
+                exp.show([["Feature_2 > 0.12", 0.14673721057200023], ["Feature_3 > 0.91", 0.021459425070950677], ["-0.88 < Feature_1 <= 0.28", -0.00808051501943347], ["-0.05 < Feature_0 <= 0.89", -0.0041850714276681624]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["Feature_2", "-0.50", -0.14710401751154792], ["Feature_3", "-0.67", -0.021074091289873906], ["Feature_1", "0.81", -0.0065337296746939034], ["Feature_0", "-0.59", -0.0020045951346561387]], 1, raw_div);
+            exp.show_raw_tabular([["Feature_2", "3.14", 0.14673721057200023], ["Feature_3", "1.13", 0.021459425070950677], ["Feature_1", "0.22", -0.00808051501943347], ["Feature_0", "0.89", -0.0041850714276681624]], 1, raw_div);
         
         </script>
         </body></html>
